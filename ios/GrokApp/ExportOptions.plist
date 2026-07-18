@@ -1,0 +1,7 @@
+{
+  "method": "app-store-connect",
+  "teamID": "YOUR_TEAM_ID",
+  "uploadSymbols": true,
+  "signingStyle": "automatic",
+  "destination": "export"
+}

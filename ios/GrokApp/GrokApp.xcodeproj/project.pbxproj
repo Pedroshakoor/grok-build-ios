@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000010000000000000001 /* GrokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000001 /* GrokApp.swift */; };
+		B10000010000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000002 /* AppModel.swift */; };
+		B10000010000000000000003 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000003 /* Theme.swift */; };
+		B10000010000000000000004 /* ACPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000004 /* ACPClient.swift */; };
+		B10000010000000000000005 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000005 /* KeychainHelper.swift */; };
+		B10000010000000000000006 /* ScrollbackEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000006 /* ScrollbackEntry.swift */; };
+		B10000010000000000000007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000007 /* ContentView.swift */; };
+		B10000010000000000000008 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000008 /* WelcomeView.swift */; };
+		B10000010000000000000009 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000009 /* OnboardingView.swift */; };
+		B1000001000000000000000A /* AgentSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000000A /* AgentSessionView.swift */; };
+		B1000001000000000000000B /* ScrollbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000000B /* ScrollbackView.swift */; };
+		B1000001000000000000000C /* PromptBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000000C /* PromptBar.swift */; };
+		B1000001000000000000000D /* SlashDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000000D /* SlashDropdown.swift */; };
+		B1000001000000000000000E /* PermissionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000000E /* PermissionBanner.swift */; };
+		B1000001000000000000000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000000F /* Assets.xcassets */; };
+		B10000010000000000000010 /* groknight.json in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000010 /* groknight.json */; };
+		B10000010000000000000011 /* grokday.json in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000011 /* grokday.json */; };
+		B10000010000000000000012 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000012 /* ThemeTests.swift */; };
+		B10000010000000000000013 /* SlashCommandCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000013 /* SlashCommandCatalog.swift */; };
+		B10000010000000000000014 /* slash-commands.json in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000014 /* slash-commands.json */; };
+		B10000010000000000000015 /* CompanionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000016 /* CompanionConfig.swift */; };
+		B10000010000000000000016 /* companion.defaults.json in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000017 /* companion.defaults.json */; };
+        B10000010000000000000018 /* CompanionBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000018 /* CompanionBrowser.swift */; };
+		B10000010000000000000019 /* ACPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000019 /* ACPProtocol.swift */; };
+		B1000001000000000000001A /* ScrollbackTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000001A /* ScrollbackTracker.swift */; };
+		B1000001000000000000001B /* CompanionTLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000001B /* CompanionTLS.swift */; };
+		B1000001000000000000001C /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000001C /* ThemePickerView.swift */; };
+		B1000001000000000000001D /* FilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000001D /* FilePickerView.swift */; };
+		B1000001000000000000001E /* ACPProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000001E /* ACPProtocolTests.swift */; };
+		B1000001000000000000001F /* SlashCommandCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000001F /* SlashCommandCatalogTests.swift */; };
+		B1000001000000000000002B /* SessionChromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000002B /* SessionChromeTests.swift */; };
+		B10000010000000000000022 /* SessionChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000022 /* SessionChrome.swift */; };
+		B10000010000000000000023 /* AgentStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000023 /* AgentStatusBar.swift */; };
+		B10000010000000000000024 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000024 /* DashboardView.swift */; };
+		B10000010000000000000025 /* UpstreamThinkingAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000025 /* UpstreamThinkingAppearance.swift */; };
+		B10000010000000000000026 /* TurnStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000026 /* TurnStatusBar.swift */; };
+		B10000010000000000000027 /* logo05.txt in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000027 /* logo05.txt */; };
+		B10000010000000000000028 /* MarkdownLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000028 /* MarkdownLite.swift */; };
+		B10000010000000000000029 /* logo07.txt in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000029 /* logo07.txt */; };
+		B1000001000000000000002A /* WelcomeLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000002A /* WelcomeLogoView.swift */; };
+		B1000001000000000000002C /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000002C /* AppSettings.swift */; };
+		B1000001000000000000002D /* FormatDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000002D /* FormatDuration.swift */; };
+		B1000001000000000000002E /* VerbGroupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000002E /* VerbGroupLogic.swift */; };
+		B1000001000000000000002F /* ThemeSuggestDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000001000000000000002F /* ThemeSuggestDropdown.swift */; };
+		B10000010000000000000030 /* FileSuggestDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000030 /* FileSuggestDropdown.swift */; };
+		B10000010000000000000031 /* SessionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000031 /* SessionPickerView.swift */; };
+		B10000010000000000000032 /* ChangelogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000032 /* ChangelogView.swift */; };
+		B10000010000000000000033 /* 0.2.99.md in Resources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000033 /* 0.2.99.md */; };
+		B10000010000000000000034 /* MermaidBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000034 /* MermaidBlockView.swift */; };
+		B10000010000000000000035 /* PagerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000010000000000000035 /* PagerSettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P10000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = T10000010000000000000001;
+			remoteInfo = GrokApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F10000010000000000000001 /* GrokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokApp.swift; sourceTree = "<group>"; };
+		F10000010000000000000002 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		F10000010000000000000003 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F10000010000000000000004 /* ACPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPClient.swift; sourceTree = "<group>"; };
+		F10000010000000000000005 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		F10000010000000000000006 /* ScrollbackEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollbackEntry.swift; sourceTree = "<group>"; };
+		F10000010000000000000007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F10000010000000000000008 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F10000010000000000000009 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F1000001000000000000000A /* AgentSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentSessionView.swift; sourceTree = "<group>"; };
+		F1000001000000000000000B /* ScrollbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollbackView.swift; sourceTree = "<group>"; };
+		F1000001000000000000000C /* PromptBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBar.swift; sourceTree = "<group>"; };
+		F1000001000000000000000D /* SlashDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashDropdown.swift; sourceTree = "<group>"; };
+		F1000001000000000000000E /* PermissionBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionBanner.swift; sourceTree = "<group>"; };
+		F1000001000000000000000F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10000010000000000000010 /* groknight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groknight.json; sourceTree = "<group>"; };
+		F10000010000000000000011 /* grokday.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grokday.json; sourceTree = "<group>"; };
+		F10000010000000000000012 /* ThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
+		F10000010000000000000013 /* SlashCommandCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashCommandCatalog.swift; sourceTree = "<group>"; };
+		F10000010000000000000014 /* slash-commands.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "slash-commands.json"; sourceTree = "<group>"; };
+		F10000010000000000000015 /* GrokApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrokApp.entitlements; sourceTree = "<group>"; };
+		F10000010000000000000016 /* CompanionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionConfig.swift; sourceTree = "<group>"; };
+		F10000010000000000000017 /* companion.defaults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "companion.defaults.json"; sourceTree = "<group>"; };
+		F10000010000000000000018 /* CompanionBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionBrowser.swift; sourceTree = "<group>"; };
+		F10000010000000000000019 /* ACPProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPProtocol.swift; sourceTree = "<group>"; };
+		F1000001000000000000001A /* ScrollbackTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollbackTracker.swift; sourceTree = "<group>"; };
+		F1000001000000000000001B /* CompanionTLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionTLS.swift; sourceTree = "<group>"; };
+		F1000001000000000000001C /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
+		F1000001000000000000001D /* FilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerView.swift; sourceTree = "<group>"; };
+		F1000001000000000000001E /* ACPProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPProtocolTests.swift; sourceTree = "<group>"; };
+		F1000001000000000000001F /* SlashCommandCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashCommandCatalogTests.swift; sourceTree = "<group>"; };
+		F1000001000000000000002B /* SessionChromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionChromeTests.swift; sourceTree = "<group>"; };
+		F10000010000000000000022 /* SessionChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionChrome.swift; sourceTree = "<group>"; };
+		F10000010000000000000023 /* AgentStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentStatusBar.swift; sourceTree = "<group>"; };
+		F10000010000000000000024 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F10000010000000000000025 /* UpstreamThinkingAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpstreamThinkingAppearance.swift; sourceTree = "<group>"; };
+		F10000010000000000000026 /* TurnStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnStatusBar.swift; sourceTree = "<group>"; };
+		F10000010000000000000027 /* logo05.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = logo05.txt; sourceTree = "<group>"; };
+		F10000010000000000000028 /* MarkdownLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownLite.swift; sourceTree = "<group>"; };
+		F10000010000000000000029 /* logo07.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = logo07.txt; sourceTree = "<group>"; };
+		F1000001000000000000002A /* WelcomeLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLogoView.swift; sourceTree = "<group>"; };
+		F1000001000000000000002C /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		F1000001000000000000002D /* FormatDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDuration.swift; sourceTree = "<group>"; };
+		F1000001000000000000002E /* VerbGroupLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbGroupLogic.swift; sourceTree = "<group>"; };
+		F1000001000000000000002F /* ThemeSuggestDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSuggestDropdown.swift; sourceTree = "<group>"; };
+		F10000010000000000000030 /* FileSuggestDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSuggestDropdown.swift; sourceTree = "<group>"; };
+		F10000010000000000000031 /* SessionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPickerView.swift; sourceTree = "<group>"; };
+		F10000010000000000000032 /* ChangelogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogView.swift; sourceTree = "<group>"; };
+		F10000010000000000000033 /* 0.2.99.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 0.2.99.md; sourceTree = "<group>"; };
+		F10000010000000000000020 /* GrokApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrokApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10000010000000000000021 /* GrokAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrokAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10000010000000000000034 /* MermaidBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidBlockView.swift; sourceTree = "<group>"; };
+		F10000010000000000000035 /* PagerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerSettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		X10000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		X10000010000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G10000010000000000000002 /* GrokApp */,
+				G10000010000000000000003 /* GrokAppTests */,
+				G10000010000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10000010000000000000002 /* GrokApp */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000001 /* GrokApp.swift */,
+				F10000010000000000000002 /* AppModel.swift */,
+				F1000001000000000000002C /* AppSettings.swift */,
+				F1000001000000000000002D /* FormatDuration.swift */,
+				F1000001000000000000002E /* VerbGroupLogic.swift */,
+				F10000010000000000000003 /* Theme.swift */,
+				F10000010000000000000025 /* UpstreamThinkingAppearance.swift */,
+				F10000010000000000000028 /* MarkdownLite.swift */,
+				F10000010000000000000004 /* ACPClient.swift */,
+				F10000010000000000000019 /* ACPProtocol.swift */,
+				F1000001000000000000001A /* ScrollbackTracker.swift */,
+				F1000001000000000000001B /* CompanionTLS.swift */,
+				F10000010000000000000005 /* KeychainHelper.swift */,
+				F10000010000000000000016 /* CompanionConfig.swift */,
+				F10000010000000000000018 /* CompanionBrowser.swift */,
+				G10000010000000000000005 /* Models */,
+				G10000010000000000000006 /* Views */,
+				G10000010000000000000007 /* Resources */,
+				F1000001000000000000000F /* Assets.xcassets */,
+				F10000010000000000000015 /* GrokApp.entitlements */,
+			);
+			path = GrokApp;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000003 /* GrokAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000012 /* ThemeTests.swift */,
+				F1000001000000000000001E /* ACPProtocolTests.swift */,
+				F1000001000000000000001F /* SlashCommandCatalogTests.swift */,
+				F1000001000000000000002B /* SessionChromeTests.swift */,
+			);
+			path = GrokAppTests;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000020 /* GrokApp.app */,
+				F10000010000000000000021 /* GrokAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000006 /* ScrollbackEntry.swift */,
+				F10000010000000000000013 /* SlashCommandCatalog.swift */,
+				F10000010000000000000022 /* SessionChrome.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000007 /* ContentView.swift */,
+				F10000010000000000000008 /* WelcomeView.swift */,
+				F1000001000000000000002A /* WelcomeLogoView.swift */,
+				F10000010000000000000009 /* OnboardingView.swift */,
+				F1000001000000000000000A /* AgentSessionView.swift */,
+				F10000010000000000000023 /* AgentStatusBar.swift */,
+				F1000001000000000000000B /* ScrollbackView.swift */,
+				F1000001000000000000000C /* PromptBar.swift */,
+				F10000010000000000000026 /* TurnStatusBar.swift */,
+				F1000001000000000000000D /* SlashDropdown.swift */,
+				F1000001000000000000000E /* PermissionBanner.swift */,
+				F1000001000000000000001C /* ThemePickerView.swift */,
+				F1000001000000000000001D /* FilePickerView.swift */,
+				F1000001000000000000002F /* ThemeSuggestDropdown.swift */,
+				F10000010000000000000030 /* FileSuggestDropdown.swift */,
+				F10000010000000000000031 /* SessionPickerView.swift */,
+				F10000010000000000000032 /* ChangelogView.swift */,
+				F10000010000000000000034 /* MermaidBlockView.swift */,
+				F10000010000000000000035 /* PagerSettingsView.swift */,
+				F10000010000000000000024 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				G10000010000000000000008 /* themes */,
+				G10000010000000000000009 /* changelogs */,
+				F10000010000000000000014 /* slash-commands.json */,
+				F10000010000000000000017 /* companion.defaults.json */,
+				F10000010000000000000027 /* logo05.txt */,
+				F10000010000000000000029 /* logo07.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000009 /* changelogs */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000033 /* 0.2.99.md */,
+			);
+			path = changelogs;
+			sourceTree = "<group>";
+		};
+		G10000010000000000000008 /* themes */ = {
+			isa = PBXGroup;
+			children = (
+				F10000010000000000000010 /* groknight.json */,
+				F10000010000000000000011 /* grokday.json */,
+			);
+			path = themes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10000010000000000000001 /* GrokApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = L10000010000000000000003 /* Build configuration list for PBXNativeTarget "GrokApp" */;
+			buildPhases = (
+				S10000010000000000000001 /* Copy Shared Themes */,
+				S10000010000000000000002 /* Sources */,
+				X10000010000000000000001 /* Frameworks */,
+				S10000010000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrokApp;
+			productName = GrokApp;
+			productReference = F10000010000000000000020 /* GrokApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		T10000010000000000000002 /* GrokAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = L10000010000000000000004 /* Build configuration list for PBXNativeTarget "GrokAppTests" */;
+			buildPhases = (
+				S10000010000000000000004 /* Sources */,
+				X10000010000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10000010000000000000001 /* PBXTargetDependency */,
+			);
+			name = GrokAppTests;
+			productName = GrokAppTests;
+			productReference = F10000010000000000000021 /* GrokAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P10000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					T10000010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					T10000010000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = T10000010000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = L10000010000000000000001 /* Build configuration list for PBXProject "GrokApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G10000010000000000000001;
+			productRefGroup = G10000010000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10000010000000000000001 /* GrokApp */,
+				T10000010000000000000002 /* GrokAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		S10000010000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000001000000000000000F /* Assets.xcassets in Resources */,
+				B10000010000000000000010 /* groknight.json in Resources */,
+				B10000010000000000000011 /* grokday.json in Resources */,
+				B10000010000000000000014 /* slash-commands.json in Resources */,
+				B10000010000000000000016 /* companion.defaults.json in Resources */,
+				B10000010000000000000027 /* logo05.txt in Resources */,
+				B10000010000000000000029 /* logo07.txt in Resources */,
+				B10000010000000000000033 /* 0.2.99.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		S10000010000000000000001 /* Copy Shared Themes */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../../shared/themes/groknight.json",
+				"$(SRCROOT)/../../shared/themes/grokday.json",
+				"$(SRCROOT)/../../shared/slash-commands.json",
+				"$(SRCROOT)/../../shared/companion.defaults.json",
+			);
+			name = "Copy Shared Themes";
+			outputPaths = (
+				"$(SRCROOT)/GrokApp/Resources/themes/groknight.json",
+				"$(SRCROOT)/GrokApp/Resources/themes/grokday.json",
+				"$(SRCROOT)/GrokApp/Resources/slash-commands.json",
+				"$(SRCROOT)/GrokApp/Resources/companion.defaults.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "bash \"${SRCROOT}/scripts/copy-themes.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10000010000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000010000000000000001 /* GrokApp.swift in Sources */,
+				B10000010000000000000002 /* AppModel.swift in Sources */,
+				B10000010000000000000003 /* Theme.swift in Sources */,
+				B10000010000000000000025 /* UpstreamThinkingAppearance.swift in Sources */,
+				B10000010000000000000028 /* MarkdownLite.swift in Sources */,
+				B10000010000000000000004 /* ACPClient.swift in Sources */,
+				B10000010000000000000019 /* ACPProtocol.swift in Sources */,
+				B1000001000000000000001A /* ScrollbackTracker.swift in Sources */,
+				B1000001000000000000001B /* CompanionTLS.swift in Sources */,
+				B10000010000000000000005 /* KeychainHelper.swift in Sources */,
+				B10000010000000000000015 /* CompanionConfig.swift in Sources */,
+				B10000010000000000000018 /* CompanionBrowser.swift in Sources */,
+				B10000010000000000000006 /* ScrollbackEntry.swift in Sources */,
+				B10000010000000000000013 /* SlashCommandCatalog.swift in Sources */,
+				B10000010000000000000022 /* SessionChrome.swift in Sources */,
+				B10000010000000000000007 /* ContentView.swift in Sources */,
+				B10000010000000000000008 /* WelcomeView.swift in Sources */,
+				B1000001000000000000002A /* WelcomeLogoView.swift in Sources */,
+				B10000010000000000000009 /* OnboardingView.swift in Sources */,
+				B1000001000000000000000A /* AgentSessionView.swift in Sources */,
+				B10000010000000000000023 /* AgentStatusBar.swift in Sources */,
+				B1000001000000000000000B /* ScrollbackView.swift in Sources */,
+				B1000001000000000000000C /* PromptBar.swift in Sources */,
+				B10000010000000000000026 /* TurnStatusBar.swift in Sources */,
+				B1000001000000000000000D /* SlashDropdown.swift in Sources */,
+				B1000001000000000000000E /* PermissionBanner.swift in Sources */,
+				B1000001000000000000001C /* ThemePickerView.swift in Sources */,
+				B1000001000000000000001D /* FilePickerView.swift in Sources */,
+				B10000010000000000000024 /* DashboardView.swift in Sources */,
+				B1000001000000000000002C /* AppSettings.swift in Sources */,
+				B1000001000000000000002D /* FormatDuration.swift in Sources */,
+				B1000001000000000000002E /* VerbGroupLogic.swift in Sources */,
+				B1000001000000000000002F /* ThemeSuggestDropdown.swift in Sources */,
+				B10000010000000000000030 /* FileSuggestDropdown.swift in Sources */,
+				B10000010000000000000031 /* SessionPickerView.swift in Sources */,
+				B10000010000000000000032 /* ChangelogView.swift in Sources */,
+				B10000010000000000000034 /* MermaidBlockView.swift in Sources */,
+				B10000010000000000000035 /* PagerSettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		S10000010000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000010000000000000012 /* ThemeTests.swift in Sources */,
+				B1000001000000000000001E /* ACPProtocolTests.swift in Sources */,
+				B1000001000000000000001F /* SlashCommandCatalogTests.swift in Sources */,
+				B1000001000000000000002B /* SessionChromeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10000010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = T10000010000000000000001 /* GrokApp */;
+			targetProxy = C10000010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C10000010000000000000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ORGANIZATIONNAME = "Pedro Shakour";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C10000010000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ORGANIZATIONNAME = "Pedro Shakour";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C10000010000000000000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GrokApp/GrokApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Grok Build";
+				INFOPLIST_KEY_NSAllowsLocalNetworking = YES;
+				INFOPLIST_KEY_NSBonjourServices = "_grok-build._tcp";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Grok Build discovers and connects to the companion agent on your local network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsMultipleScenes = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.grokbuild.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C10000010000000000000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GrokApp/GrokApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Grok Build";
+				INFOPLIST_KEY_NSAllowsLocalNetworking = YES;
+				INFOPLIST_KEY_NSBonjourServices = "_grok-build._tcp";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Grok Build discovers and connects to the companion agent on your local network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsMultipleScenes = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.grokbuild.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C10000010000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.grokbuild.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrokApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrokApp";
+			};
+			name = Debug;
+		};
+		C10000010000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.grokbuild.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrokApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrokApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		L10000010000000000000001 /* Build configuration list for PBXProject "GrokApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10000010000000000000002 /* Debug */,
+				C10000010000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		L10000010000000000000003 /* Build configuration list for PBXNativeTarget "GrokApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10000010000000000000004 /* Debug */,
+				C10000010000000000000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		L10000010000000000000004 /* Build configuration list for PBXNativeTarget "GrokAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10000010000000000000006 /* Debug */,
+				C10000010000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P10000010000000000000001 /* Project object */;
+}

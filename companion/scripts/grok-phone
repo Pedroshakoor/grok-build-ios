@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# Copyright (c) 2026 Pedro Shakour
+# SPDX-License-Identifier: Apache-2.0
+#
+# Pro path: run official `grok agent stdio` for the phone pager.
+#
+# Official Grok Build has no TCP/phone listener — it speaks ACP on stdio only.
+# This wraps the same binary the CLI uses, behind a TLS+PIN bridge the iOS app pairs with.
+#
+# Usage:
+#   cd "/Users/pedro/Desktop/GROK APP"
+#   export XAI_API_KEY=xai-...
+#   ./companion/scripts/grok-phone
+#
+# Then in the Simulator/phone: Setup → paste PIN → connect
+
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+HOST="${GROK_ACP_HOST:-127.0.0.1}"
+PORT="${GROK_ACP_PORT:-7391}"
+
+export PATH="${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:${PATH}"
+
+if [[ -z "${XAI_API_KEY:-}" ]]; then
+  echo "grok-phone: export XAI_API_KEY=xai-... first (same key you use for grok CLI)" >&2
+  exit 1
+fi
+
+if ! command -v grok >/dev/null 2>&1; then
+  echo "grok-phone: 'grok' not on PATH — install https://x.ai/cli" >&2
+  exit 1
+fi
+
+# Desktop is TCC-blocked for agents — App Support workspace by default.
+export GROK_COMPANION_CWD="${GROK_COMPANION_CWD:-$HOME/Library/Application Support/GrokBuild/workspace}"
+export GROK_COMPANION_STATE_DIR="${GROK_COMPANION_STATE_DIR:-$HOME/Library/Application Support/GrokBuild/state}"
+mkdir -p "$GROK_COMPANION_CWD" "$GROK_COMPANION_STATE_DIR"
+export GROK_AGENT="${GROK_AGENT:-grok-build}"
+export GROK_MODEL="${GROK_MODEL:-grok-build-0.1}"
+
+# Free stale listeners so PIN print is reliable.
+pkill -9 -f "acp_tcp_bridge.py" 2>/dev/null || true
+sleep 0.3
+
+echo "grok-phone: official grok agent stdio ← TLS+PIN on ${HOST}:${PORT}"
+echo "grok-phone: workspace=${GROK_COMPANION_CWD}"
+echo "grok-phone: leave this terminal open — paste PIN into the iOS app"
+echo ""
+
+exec bash "$ROOT/companion/scripts/start-acp-bridge.sh" --real --host "$HOST" --port "$PORT" "$@"

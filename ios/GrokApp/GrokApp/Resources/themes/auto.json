@@ -1,0 +1,12 @@
+{
+  "name": "auto",
+  "display_name": "auto",
+  "aliases": [
+    "system"
+  ],
+  "requires_truecolor": false,
+  "resolved_dark": "groknight",
+  "resolved_light": "grokday",
+  "tokens": {},
+  "note": "Meta-variant: follows system appearance; colors resolved at runtime per 06-theming.md"
+}

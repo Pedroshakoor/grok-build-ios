@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  companion:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Check SOURCE_REV
+        run: bash scripts/check-source-rev.sh
+      - name: Companion TLS tests
+        run: python3 companion/tests/test_companion_tls.py
+      - name: ACP stub e2e
+        run: bash scripts/e2e-acp-smoke.sh
+
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: xcodebuild test
+        run: |
+          xcodebuild test \
+            -project ios/GrokApp/GrokApp.xcodeproj \
+            -scheme GrokApp \
+            -destination 'platform=iOS Simulator,name=iPhone 17' \
+            -only-testing:GrokAppTests/ACPProtocolTests \
+            -only-testing:GrokAppTests/SlashCommandCatalogTests \
+            -only-testing:GrokAppTests/SessionChromeTests \
+            CODE_SIGNING_ALLOWED=NO \
+            -quiet
+      - name: Simulator build
+        run: |
+          xcodebuild build \
+            -project ios/GrokApp/GrokApp.xcodeproj \
+            -scheme GrokApp \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            -quiet

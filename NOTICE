@@ -1,0 +1,15 @@
+NOTICE
+======
+
+First-party iOS client and companion code:
+  Copyright (c) 2026 Pedro Shakour
+
+This product includes software developed from the Grok Build open-source
+project (https://github.com/xai-org/grok-build), Copyright SpaceXAI / xAI
+and contributors, licensed under the Apache License, Version 2.0.
+
+Vendored tree: ./upstream-grok-build (git submodule)
+See UPSTREAM_PIN for the pinned revision.
+
+See LICENSE and THIRD-PARTY-NOTICES for full license texts and third-party
+notices from the upstream repository.
